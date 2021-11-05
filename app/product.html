@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мир часов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/catalog.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="menu-close"></div>
+
+  <a href="/" class="logo">
+    <span class="logo-icon"><img src="images/logo-icon.svg" alt=""></span><span class="logo-text"><img
+      src="images/logo-text.svg" alt=""></span>
+  </a>
+
+  <ul class="menu">
+    <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
+    <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
+    <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
+    <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
+    <li class="menu__item"><a href="about.html" class="menu__links">О нас</a></li>
+    <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
+  </ul>
+</div>
+
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a href="/" class="logo">
+        <span class="logo-icon"><img src="images/logo-icon.svg" alt=""></span><span class="logo-text"><img
+          src="images/logo-text.svg" alt=""></span>
+      </a>
+
+      <div class="header__box">
+        <div class="header__box_icon">
+          <img src="images/maps-and-flags.svg" alt="Продать часы">
+        </div>
+        <div class="header__box_text">Москва</div>
+      </div>
+
+
+      <div class="header__box">
+        <div class="header__box_icon">
+          <img src="images/maps-and-flags.svg" alt="Продать часы">
+        </div>
+        <div class="header__box_text">Работаем по всей России</div>
+      </div>
+
+      <div class="header__box header__box_message">
+        <a href="tg://resolve?domain=<79688889288>" class="messenger links-telegram">
+          <span class="header__box_icon"><img src="images/telegram.svg" alt=""></span>
+        </a>
+        <a href="https://wa.me/79688889288" class="messenger links-whatsapp">
+          <span class="header__box_icon"><img src="images/whatsapp2.svg" alt=""></span>
+        </a>
+        <a href="tel:+79688889288" class="phone">
+          <span class="phone__icon header__box_icon"><img src="images/phone-call.svg" alt=""></span>
+          <span class="phone__text">8 (968) 888-92-88</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <p>Оставьте заявку на продажу часов</p>
+
+      <form method="post" class="form">
+        <label><input type="text" placeholder="Имя" required name="name"></label>
+
+        <label><input type="text" placeholder="Телефон" required name="phone"></label>
+
+        <div class="file__upload">
+          <label class="file__upload_label">
+                    <span class="file__upload_icon">
+                        <img src="images/pic.svg" alt="">
+                    </span>
+            <input type="file" name="file" class="file__input">Прикрепите фото
+          </label>
+          <!--                <div class="file__upload_result"></div>-->
+        </div>
+
+        <button type="submit" class="btn btn-white">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<div class="page-product bg-blue-light">
+  <section class="product">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li><a href="catalog.html">Каталог часов</a></li>
+        <li>
+          <a href="politics.html" class="active">
+            Breguet Breguet Archieve 3337 3337BB/1E/986
+          </a>
+        </li>
+      </ul>
+
+      <div class="title-mobile"></div>
+
+      <div class="product-images">
+        <div class="product-preview">
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview1.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview2.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview3.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview4.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview4.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-preview__item"><img src="images/preview3.png" alt=""></div>
+          </div>
+        </div>
+
+        <div class="product-gallery">
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/img-max.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/preview2.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/preview3.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/preview4.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/img-max.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="product-gallery__item"><img src="images/img-max.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-information">
+        <h1>BREGUET BREGUET ARCHIEVE 3337 3337BB/1E/986</h1>
+        <ul class="characteristics-box">
+          <li>
+            <p>Категории:</p>
+            <a href="#">Часы, </a>
+            <a href="#">Сertina</a>
+          </li>
+          <li>
+            <p>Состояние:</p>
+            <span>Новые</span>
+          </li>
+          <li>
+            <p>Внутренний код:</p>
+            <span>22334455</span>
+          </li>
+        </ul>
+
+        <div class="price-wrapper">
+          <p>Цена:</p>
+          <div class="price">30 000 ₽</div>
+        </div>
+
+        <a href="#order__modal" class="btn btn-accent open_modal">Купить</a>
+
+        <div class="advantages-products">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon1.svg" alt=""></div>
+            <p>Онлайн оценка</p>
+          </div>
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon2.svg" alt=""></div>
+            <p>Моментальная выплата</p>
+          </div>
+
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon3.svg" alt=""></div>
+            <p>45 минут на выкуп</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info-box">
+        <p>В данном <a href="catalog.html" class="links">интернет-каталоге часов</a> вы всегда сможете купить часы
+          Breguet. Гарантия лучшей цены. <a href="#callback__modal"
+                                            class="links open_modal">Отправьте
+            заявку</a> на покупку часов онлайн.</p>
+
+        <p>Мы так же готовы выкупить ваши часы или обменять ваши часы на часы из нашего каталога. Если у вас остались
+          вопросы по часам Breguet Breguet Archieve 3337 3337BB/1E/986 с референсом 3337BB/1E/986, пожалуйста напишите
+          нам в <a href="https://wa.me/79688889288" class="links font-bold">WhatsApp</a> или <a
+              href="tg://resolve?domain=<79688889288>" class="links font-bold">Telegram</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="characteristics">
+    <div class="container">
+      <h2><span>характеристики</span></h2>
+
+      <div class="characteristics-wrapper">
+        <ul class="characteristics-box">
+          <li>
+            <p>Производитель:</p>
+            <span>Certina</span>
+          </li>
+          <li>
+            <p>Пол:</p>
+            <span>Мужские</span>
+          </li>
+          <li>
+            <p>Корпус:</p>
+            <span>Нержавеющая сталь</span>
+          </li>
+          <li>
+            <p>Год выпуска:</p>
+            <span>2017</span>
+          </li>
+          <li>
+            <p>Дополнительная информация:</p>
+            <span>полный комплект</span>
+          </li>
+        </ul>
+
+        <ul class="characteristics-box">
+          <li>
+            <p>Браслет:</p>
+            <span>Нержавеющая сталь</span>
+          </li>
+          <li>
+            <p>Диаметр:</p>
+            <span>42 мм</span>
+          </li>
+          <li>
+            <p>Механизм:</p>
+            <span>Кварцевый хронометр</span>
+          </li>
+          <li>
+            <p>Стекло:</p>
+            <span>Сапфировое</span>
+          </li>
+        </ul>
+
+        <ul class="characteristics-box">
+          <li>
+            <p>Функции:</p>
+            <span>Хронограф, дата, тахиметр, EOL</span>
+          </li>
+          <li>
+            <p>Циферблат:</p>
+            <span>Черный</span>
+          </li>
+          <li>
+            <p>Водонепроницаемость:</p>
+            <span>100 м</span>
+          </li>
+        </ul>
+
+        <ul class="characteristics-box">
+          <li>
+            <p>Особенности:</p>
+            <span>Официально сертифицированный хронометр C.O.S.C. Антибликовое покрытие стекла, защищенная заводная головка</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="recommended">
+    <div class="container">
+      <h2>вам может понравиться</h2>
+
+      <div class="row">
+        <div class="col-20 mb-30">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="images/product2.png" alt=""></a>
+
+            <a href="product.html" class="product-card__name">Hublot Big Bang 44 MM AeroBang Red Magic Carbon
+              311.QX.1134.RX</a>
+
+            <div class="product-card__price">30 000 ₽</div>
+          </div>
+        </div>
+        <div class="col-20 mb-30">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="images/product4.png" alt=""></a>
+
+            <a href="product.html" class="product-card__name">Hublot Big Bang 44 MM AeroBang Red Magic Carbon
+              311.QX.1134.RX</a>
+
+            <div class="product-card__price">30 000 ₽</div>
+          </div>
+        </div>
+
+        <div class="col-20 mb-30">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="images/product1.png" alt=""></a>
+
+            <a href="product.html" class="product-card__name">Hublot Big Bang 44 MM AeroBang Red Magic Carbon
+              311.QX.1134.RX</a>
+
+            <div class="product-card__price">30 000 ₽</div>
+          </div>
+        </div>
+
+        <div class="col-20 mb-30">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="images/product3.png" alt=""></a>
+
+            <a href="product.html" class="product-card__name">Hublot Big Bang 44 MM AeroBang Red Magic Carbon
+              311.QX.1134.RX</a>
+
+            <div class="product-card__price">30 000 ₽</div>
+          </div>
+        </div>
+        <div class="col-20 mb-30">
+          <div class="product-card">
+            <a href="product.html" class="product-card__img"><img src="images/product2.png" alt=""></a>
+
+            <a href="product.html" class="product-card__name">Hublot Big Bang 44 MM AeroBang Red Magic Carbon
+              311.QX.1134.RX</a>
+
+            <div class="product-card__price">30 000 ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="callback bg-accent color-white">
+  <div class="container">
+    <div class="callback__content">
+      <h2>Перезвоним Вам за 30 секунд</h2>
+      <div class="box-text">
+        Оставьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время
+      </div>
+    </div>
+
+    <form method="post" class="form form__callback">
+
+      <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
+
+      <button type="submit" class="btn btn-white">Перезвоните мне</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <ul class="footer-menu">
+        <li><a href="article.html">Статьи</a></li>
+        <li><a href="catalog.html">Каталог часов</a></li>
+        <li><a href="politics.html">Политика конфиденциальности</a></li>
+        <li><a href="politics.html">Пользовательское соглашение</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright">Мир часов © 2021</div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal__div" id="callback__modal">
+  <div class="modal__wrapper">
+    <span class="modal__close"></span>
+    <h2>Онлайн оценка часов.
+      Продать за 5 минут</h2>
+
+    <form method="post" class="form">
+      <div class="form-group">
+        <label><input type="text" placeholder="Имя" required name="name"></label>
+
+        <label><input type="text" placeholder="Телефон" required name="phone"></label>
+      </div>
+
+      <div class="form-group">
+        <div class="file__upload">
+          <label class="file__upload_label">
+                    <span class="file__upload_icon">
+                        <img src="images/pic.svg" alt="">
+                    </span>
+            <input type="file" name="file" class="file__input">Прикрепите фото
+          </label>
+          <!--                <div class="file__upload_result"></div>-->
+        </div>
+
+        <button type="submit" class="btn btn-white">Отправить заявку</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<div class="modal__div order-modal" id="order__modal">
+  <div class="modal__wrapper">
+    <span class="modal__close"></span>
+    <h2>BREGUET BREGUET ARCHIEVE 3337 3337BB/1E/986</h2>
+
+    <div class="box-text">
+      <p>Внутренний код: 22334455</p>
+    </div>
+
+    <form method="post" class="form">
+      <label><input type="text" placeholder="Имя" required name="name"></label>
+
+      <label><input type="text" placeholder="+7 ___ - __ - __" required name="phone"></label>
+      <button type="submit" class="btn btn-white">Купить часы</button>
+    </form>
+
+  </div>
+</div>
+
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
