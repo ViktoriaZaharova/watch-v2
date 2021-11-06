@@ -120,6 +120,30 @@ function accordeon() {
 
 accordeon();
 
+$(document).ready(function() {
+
+    $('.slider-range').slider({
+        range: true,
+        min: 0,
+        max: 100000,
+        values: [0, 100000],
+        classes: {
+            "ui-slider-handle": "ui-corner-all"
+        },
+        slide: function (event, ui) {
+            //Поле минимального значения
+            $(".dec1").val(ui.values[0]);
+            //Поле максимального значения
+            $(".dec2").val(ui.values[1]);
+        }
+    });
+
+    $(".dec1").val($(".slider-range").slider("values", 0));
+    $(".dec2").val($(".slider-range").slider("values", 1));
+
+});
+
+
 // hidden list > 5
 $('.panel_heading .list-checkbox').each(function () {
     if ($(this).find('li').length > 10) {

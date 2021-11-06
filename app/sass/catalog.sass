@@ -1,32 +1,51 @@
 @import "vars"
 
-
-.sidebar-banner
-  width: 100%
-  background: #C4C4C4
-  height: 483px
-
 .sidebar
   width: 263px
 
   h3
     margin: 0 0 40px
 
-
 .catalog
-  padding: 80px 0 100px
+  padding: 0 0 80px
 
   h1
     font-size: 30px
     margin: 0 0 20px
+    text-align: left
+    line-height: normal
 
   .box-text
-    margin: 0 0 50px
-    color: #828282
     line-height: 135%
 
   .container
     align-items: flex-start
+
+.form-search
+  position: relative
+  margin: 20px 0
+  width: 100%
+  input
+    background: #fff
+    border: 1px solid #C8D0D8
+      radius: 5px
+    padding: 0 20px 0 51px
+    font-size: 16px
+    color: $accent
+    &::placeholder
+      color: #828282
+
+.btn-search
+  width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  position: absolute
+  left: 20px
+  top: 50%
+  transform: translate(0,-50%)
 
 .catalog-content
   width: calc(100% - 263px)
@@ -34,7 +53,7 @@
 
 .sorting-wrapper
   width: 100%
-  margin: 0 0 30px
+  margin: 0 0 20px
   display: flex
   align-items: center
   flex-wrap: wrap
@@ -47,7 +66,7 @@
 
   label
     width: fit-content
-    margin: 0 0 0 20px
+    margin: 0 0 0 10px
 
 .select-sorting
   height: auto
@@ -63,7 +82,7 @@
   justify-content: center
   flex-wrap: wrap
   margin: 20px auto 0
-
+  font-family: 'Roboto', sans-serif
   li
     a
       display: flex
@@ -71,16 +90,16 @@
       justify-content: center
       width: 24px
       height: 30px
-      color: #3A3A3A
+      color: #303030
       letter-spacing: 0.01em
       border: 1px solid transparent
         radius: 3px
 
       &:hover
-        color: #C7AB8E
+        color: $btn
 
     .active
-      border-color: #C7AB8E
+      border-color: #546B7B
 
     &:first-child
       margin: 0 15px 0 0
@@ -99,7 +118,7 @@
 
 .panel_heading
   width: 100%
-  margin: 0 0 50px
+  margin: 0 0 40px
   cursor: pointer
   &:last-child
     margin: 0
@@ -111,14 +130,13 @@
 
 .block_title
   width: 100%
-  border-bottom: 2px solid #F1F2F2
   display: flex
   align-items: center
   justify-content: space-between
 
   h4
     text-transform: uppercase
-    color: #C7AB90
+    color: #546B7B
     font-weight: bold
   &:after
     content: ''
@@ -129,16 +147,51 @@
       size: contain
 
 .block_hover
-  padding: 15px 0 0
+  padding: 19px 0 0
   width: 100%
+
+.slider-range-wrapper
+  width: 100%
+
+.slider-range.ui-widget.ui-widget-content
+  border: none
+  width: 100%
+  background: #546B7B
+  height: 2px
+  margin: 25px 0 0
+  .ui-slider-range
+    background: #546B7B
+  .ui-slider-handle
+    background: #546B7B
+    width: 20px
+    height: 20px
+    border: none
+      radius: 50%
+    top: -10px
+    outline: none
+    box-shadow: none
+
+.range_val
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  input
+    width: calc(50% - 5px)
+    height: 38px
+    border: 1px solid #C4C4C4
+    padding: 0
+    text-align: center
+    color: #303030
+    font-size: 14px
 
 .clear-filter
   width: 100%
-  display: flex
+  display: none
   align-items: center
-  margin: 50px 0
+  margin: 20px 0 0
   color: #3A3A3A
-  text-transform: uppercase
 
   &__icon
     margin: 0 15px 0 0
@@ -166,6 +219,7 @@
   height: 20px
   min-width: 20px
   border: 1px solid #C4C4C4
+    radius: 3px
   &:before
     content: ''
     position: absolute
@@ -178,8 +232,8 @@
 
 
 .checkbox-inp:checked + .checkbox-custom
-  background: #C7AB8E
-  border-color: #C7AB8E
+  background: #546B7B
+  border-color: #546B7B
   &:before
     background: url("../images/checkbox.svg") no-repeat center
       size: contain
@@ -228,8 +282,10 @@
     padding: 30px 20px
     overflow-y: auto
     box-shadow: 0 0 10px rgba(#000, .3)
+    h3
+      margin: 0 0 30px
 
-  .sidebar-close
+  .sidebar-close, .clear-filter
     display: flex
 
   .btn-filter
@@ -240,9 +296,6 @@
     width: 100%
     padding: 0
 
-  .catalog
-    padding: 50px 0 70px
-
 @media (max-width: 480px)
   .sorting-wrapper
     flex-direction: column
@@ -251,9 +304,12 @@
   .sorting-box
     margin: 0 0 10px
 
-  .catalog .box-text
-    margin: 0 0 30px
-
   .catalog
-    .col-30
-      width: 100%
+    padding: 0 0 40px
+    h1
+      font-size: 24px
+    .col-25
+      width: 50%
+
+  .form-search input
+    font-size: 14px

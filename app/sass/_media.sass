@@ -112,6 +112,12 @@
   .breadcrumb
     margin: 20px 0 30px
 
+  .map
+    max-width: 500px
+
+  .contacts__info
+    width: calc(100% - 500px)
+
 
 @media only screen and (max-width : 992px)
   .form label, .file__upload, .form .consent, .form button
@@ -201,12 +207,6 @@
     &:after
       transform: rotate(-45deg)
 
-  .about__image
-    width: 400px
-
-  .about__content
-    width: calc(100% - 400px)
-
   .col-25
     width: 33.3%
 
@@ -217,6 +217,19 @@
 
   .error-content
     max-width: 380px
+
+  .map
+    max-width: 360px
+    height: 360px
+
+  .contacts__info
+    width: calc(100% - 360px)
+
+  .header__box_wrapper
+    margin: 20px 0
+
+  .about-gallery
+    margin: 40px 0
 
 @media only screen and (max-width : 870px)
   .banner-home__image
@@ -240,15 +253,6 @@
   .stages-works__box_icon
     height: 70px
 
-  .contacts__image
-    width: 300px
-
-  .contacts__info
-    width: calc(100% - 300px)
-    padding: 0 0 0 30px
-
-  .page-title
-    margin: 50px auto 40px
 
   .article__image
     width: 300px
@@ -318,7 +322,7 @@
     margin: 0 0 20px
 
 
-  .appraisal, .stages-works, .brands-section
+  .stages-works, .brands-section
     padding: 60px 0
 
   input
@@ -339,6 +343,11 @@
   h1
     font-size: 24px
     margin: 0 auto 20px
+
+  .h1-my
+    font-size: 30px
+    line-height: normal
+    margin: 0 auto 30px
 
   .brands
     padding: 0 0 40px
@@ -389,27 +398,9 @@
   .name-company
     font-size: 18px
 
-  .contacts__info_box
-    margin: 0 0 30px
-    flex-wrap: nowrap
-
   .contacts
     padding: 0 0 50px
 
-  .about__content
-    max-width: none
-    width: 100%
-    padding: 0
-    margin: 0 0 30px
-    order: -1
-
-  .about__image
-    margin: 0 auto
-    width: 280px
-    height: 260px
-
-  .about
-    padding: 0 0 60px
 
   .col-16
     width: 20%
@@ -433,6 +424,11 @@
   .form-my input
     height: 50px
 
+  .h1-my
+    font-size: 24px
+    line-height: normal
+    margin: 0 auto 20px
+
 @media only screen and (max-width : 700px)
   .article__content
     width: 100%
@@ -444,6 +440,16 @@
 
   .article p, .article ul
     margin: 0 0 10px
+
+  .contacts__info
+    max-width: none
+    padding: 0
+    width: 100%
+    margin: 0 auto 30px
+
+  .map
+    height: 250px
+    max-width: 100%
 
 
 @media only screen and (max-width : 650px)
@@ -536,9 +542,6 @@
     span
       padding: 0
 
-  .appraisal
-    padding: 40px 0
-
   .banner-home__content
     max-width: 265px
 
@@ -601,24 +604,9 @@
   .form__callback
     margin: 0 auto
 
-
-  .contacts .header__box
-    justify-content: flex-start
-
-  .contacts__image
-    width: 200px
-    height: 200px
-    padding: 20px
-
-  .contacts .header__box
-    margin: 0 0 20px
-
   .name-company
     font-size: 16px
     margin: 0 0 30px
-
-  .contacts__info
-    width: calc(100% - 200px)
 
   .col-16
     width: 33.3%
@@ -649,7 +637,21 @@
     &:before, &:after
       left: 10px
 
+  .about-gallery
+    margin: 20px 0
 
+  .about-gallery-group
+    width: 100%
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+  .about-gallery-box
+    margin: 0 0 20px
+    width: calc(50% - 10px)
+
+  .about
+    padding: 0 0 40px
 
 @media only screen and (max-width : 510px)
   .news__box_img
@@ -755,18 +757,7 @@
     width: 48px
     height: 48px
 
-  .contacts__info
-    max-width: none
-    padding: 0
-    width: 100%
-    order: -1
-    margin: 0 auto 30px
 
-  .contacts__image
-    margin: 0 auto
-
-  .map
-    height: 250px
 
   .article-callback__title
     font-size: 22px
@@ -817,9 +808,6 @@
   .stages-works__box
     width: 50%
 
-  .page-title
-    margin: 40px auto 30px
-
   .article
     font-size: 14px
 
@@ -850,3 +838,6 @@
 
   .politics-wrapper
     padding: 30px 15px
+
+  .breadcrumb
+    margin: 15px 0 20px
