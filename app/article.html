@@ -2,469 +2,393 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>Мир часов</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <title>Мир часов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:image" content="path/to/image.jpg">
-    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
 
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#000">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
 <div class="mobile-menu">
-    <div class="menu-close"></div>
+  <div class="menu-close"></div>
 
-    <ul class="menu mobile-menu__menu">
-        <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
-        <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
-        <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
-        <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
-        <li class="menu__item"><a href="about.html" class="menu__links">О ломбарде</a></li>
-        <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
-    </ul>
+  <a href="/" class="logo">
+    <span class="logo-icon"><img src="images/logo-icon.svg" alt=""></span><span class="logo-text"><img
+      src="images/logo-text.svg" alt=""></span>
+  </a>
 
-    <div class="header__box header__box_address">
-        <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt=""></div>
-        <div class="header__box_address_text">г. Москва, Ленинградский
-            проспект, дом 76, к.1
-        </div>
-    </div>
-
-    <div class="header__box header__box_message">
-        <a href="tg://resolve?domain=<79688889288>" class="messenger">
-            <span class="header__box_icon"><img src="images/telegram2.svg" alt=""></span>
-            <span class="header__box_text">Написать в <strong>Telegram</strong></span>
-        </a>
-        <a href="https://wa.me/79688889288" class="messenger">
-            <span class="header__box_icon"><img src="images/whatsapp2.svg" alt=""></span>
-            <span class="header__box_text">Написать в <strong>Whatsapp</strong></span>
-        </a>
-    </div>
+  <ul class="menu">
+    <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
+    <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
+    <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
+    <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
+    <li class="menu__item"><a href="about.html" class="menu__links">О нас</a></li>
+    <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
+  </ul>
 </div>
 
 <header class="header">
-    <div class="header__top">
-        <div class="container">
+  <div class="header__top">
+    <div class="container">
 
-            <a href="/" class="logo">
-                <img src="images/logo.svg" alt="">
-            </a>
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-            <div class="header__box header__box_phone">
-                <div class="header__box_icon">
-                    <img src="images/phone-call.svg" alt="Продать часы">
-                </div>
-                <div class="phone-wrapper">
-                    <a href="tel:+74951477778" class="phone">
-                        <span class="phone__text">8 (495) 147-77-78</span>
-                    </a>
-                    <a href="tel:+79688889288" class="phone">
-                        <span class="phone__text">8 (968) 888-92-88</span>
-                    </a>
-                </div>
-            </div>
+      <a href="/" class="logo">
+        <span class="logo-icon"><img src="images/logo-icon.svg" alt=""></span><span class="logo-text"><img
+          src="images/logo-text.svg" alt=""></span>
+      </a>
 
-            <div class="header__box header__box_address">
-                <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt="адрес"></div>
-                <div class="header__box_address_text">г. Москва, Ленинградский
-                    проспект, дом 76, к.1
-                </div>
-            </div>
-
-
-            <div class="header__box header__box_message">
-                <a href="tg://resolve?domain=<79688889288>" class="messenger">
-                    <span class="header__box_icon"><img src="images/telegram2.svg" alt=""></span>
-                    <span class="header__box_text">Написать в <strong>Telegram</strong></span>
-                </a>
-                <a href="https://wa.me/79688889288" class="messenger">
-                    <span class="header__box_icon"><img src="images/whatsapp2.svg" alt=""></span>
-                    <span class="header__box_text">Написать в <strong>Whatsapp</strong></span>
-                </a>
-            </div>
-
-            <div class="btn-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
+      <div class="header__box">
+        <div class="header__box_icon">
+          <img src="images/maps-and-flags.svg" alt="Продать часы">
         </div>
-    </div>
+        <div class="header__box_text">Москва</div>
+      </div>
 
-    <div class="header__bottom">
-        <div class="container">
-            <ul class="menu">
-                <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
-                <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
-                <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
-                <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
-                <li class="menu__item"><a href="about.html" class="menu__links">О ломбарде</a></li>
-                <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
-            </ul>
+      <div class="header__box">
+        <div class="header__box_icon">
+          <img src="images/maps-and-flags.svg" alt="Продать часы">
         </div>
+        <div class="header__box_text">Работаем по всей России</div>
+      </div>
+
+      <div class="header__box header__box_message">
+        <a href="tg://resolve?domain=<79688889288>" class="messenger links-telegram">
+          <span class="header__box_icon"><img src="images/telegram.svg" alt=""></span>
+        </a>
+        <a href="https://wa.me/79688889288" class="messenger links-whatsapp">
+          <span class="header__box_icon"><img src="images/whatsapp.svg" alt=""></span>
+        </a>
+        <a href="tel:+79688889288" class="phone">
+          <span class="phone__icon header__box_icon"><img src="images/phone-call.svg" alt=""></span>
+          <span class="phone__text">8 (968) 888-92-88</span>
+        </a>
+      </div>
     </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <p>Оставьте заявку на продажу часов</p>
+
+      <form method="post" class="form">
+        <label><input type="text" placeholder="Имя" required name="name"></label>
+
+        <label><input type="text" placeholder="Телефон" required name="phone"></label>
+
+        <div class="file__upload">
+          <label class="file__upload_label">
+                    <span class="file__upload_icon">
+                        <img src="images/pic.svg" alt="">
+                    </span>
+            <input type="file" name="file" class="file__input">Прикрепите фото
+          </label>
+          <!--                <div class="file__upload_result"></div>-->
+        </div>
+
+        <button type="submit" class="btn btn-white">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
 </header>
 
-<div class="breadcrumb-wrapper">
-    <div class="container">
-        <ul class="breadcrumb">
-            <li>
-                <a href="index.html">
-                    <span class="arrows-right"></span>
-
-                    <span>Главная</span>
-                </a>
-            </li>
-            <li>
-                <a href="services.html">
-                    <span class="arrows-right"></span>
-                    <span>Статьи</span>
-                    <span class="arrows-left"></span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <span class="arrows-right"></span>
-                    <span>Ломбард-это самый старый вид коммерческой деятельности, который дал свое начало несколько столетий назад в Италии.</span>
-                    <span class="arrows-left"></span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
 <section class="article">
-    <div class="container">
-        <h2 class="article-title"><span>Ломбард-это самый старый вид коммерческой деятельности,
-который дал свое начало несколько столетий назад в Италии.</span></h2>
+  <div class="container">
+    <ul class="breadcrumb">
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li><a href="services.html">Услуги</a></li>
+      <li><a href="article.html" class="active">Скупка часов</a></li>
+    </ul>
 
-            <div class="article__content">
-                <div class="article__image"><img src="images/news4.jpg" alt=""></div>
-                <p>Выдача денег под залог и хранение имущества – это основные услуги ломбардов. В первом случае, клиент
-                    сначала получает заемные средства, оставляя свое имущество. Ломбард хранит у себя предмет ценности
-                    до
-                    определенного срока, пока заемщик ее не выкупит с начисленными процентами. Во втором, клиент платит
-                    за
-                    возможность хранения своего имущества.</p>
+    <h1 class="h1-my">Скупка часов</h1>
 
-                <p>Часы-это показатель статуса и положения человека. Именно по этой причине многие люди выбирают
-                    брендовые
-                    модели часов. Продажа старых часов-стимулирует покупку новых брендовых часов.</p>
+    <div class="article-wrapper">
+      <div class="article__content">
+        <div class="box-text">
+          <p>Швейцарские часы уже более 200 лет являются символом точности и часового изящества. За долгую историю
+            часового дела мир увидел более полусотни выдающихся мастеров, многие из которых в последствии основали свои
+            мануфактуры и дома.</p>
 
-                <p>Часовой ломбард ценится тем, что оценка и скупка часов происходит исходя из марки. Наиболее популярны
-                    для скупки часов элитные марки швейцарских, германских и итальянских часов.</p>
+          <p>Спустя несколько столетий, отношение к часовому делу только улучшилось. Любовь к часам возрастает с каждым
+            днем. Многие стремятся к приобретению часов разных марок и брендов. По крайней мере с уверенностью можно
+            сказать, что любителей часов с каждым днем все больше. Признавая это можно отметить еще один момент — это
+            стоимость часов, сделанных в Швейцарии. Долгие годы она была достаточно высока как для любителей, так и для
+            профессионалов часового дела.</p>
 
-                <p>Старые и новые часы можно принести в наш ломбард. Это избавит Вас от необходимости искать частного
-                    покупателя, который предложит ам меньшую сумму чем вы сможете получить в нашем ломбарде. Если Вам
-                    срочно
-                    нужна крупная сумма денег, вы всегда сможете обратиться к нам.</p>
+          <p>Виной этому не только сложность часовых механизмов и разработки элементов, но также и борьба на рынке.
+            Каждая мануфактура хочет привлечь клиента на свою сторону, именно поэтому придумывает всякие изощрения для
+            этой цели.</p>
 
-                <p>Профессиональные сотрудники нашего ломбарда проконсультируют вас по текущей рыночной стоимости и
-                    дадут
-                    экспертную оценку ваших часов.</p>
-
-                <p>Наша компания в Москве предлагает полный спектр услуг связанных с залогом брендовых часов, покупкой и
-                    их
-                    продажей. У нас вы можете получить крупную сумму денег или приобрести элитные часы на выгодных для
-                    вас
-                    условиях.</p>
-
-
-                <p>Профессиональные сотрудники нашего ломбарда проконсультируют вас по текущей рыночной стоимости и
-                    дадут
-                    экспертную оценку ваших часов.</p>
-
-                <p>Наша компания в Москве предлагает полный спектр услуг связанных с залогом брендовых часов, покупкой и
-                    их
-                    продажей. У нас вы можете получить крупную сумму денег или приобрести элитные часы на выгодных для
-                    вас
-                    условиях.</p>
-            </div>
-
-
-        <div class="article-box">
-            <h4 class="article-box__subtitle">Залог элитных часов</h4>
-
-
-            <p>Мы понимаем, что заложенные вами часы представляют для вас большую ценность. Возможно очень дороги, как
-                память. Ваши элитные часы будут бережно храниться у нас под залогом в Москве, в охраняемом помещении, по
-                этому за их сохранность вы можете быть полностью уверены.</p>
-
-            <p>Если вы заложили часы на определенный срок, но решили выкупить их раньше-мы пересчитаем проценты за
-                пользование займом. Эти условия прописаны в договоре, один экземпляр которого выдается на руки клиенту.
-                Заложить часы в наш ломбард всегда удобно именно по этой причине выбирают именно нашу компанию сотни
-                клиентов в Москве.</p>
-
-            <p>Оценка часов производится опытным оценщиком в присутствии клиента. Цена и детали сделки кредитования
-                обговариваются сразу до подписания договора.</p>
-
-            <p>Мы можем по вашему желанию, за время пока часы хранятся у нас провести такие работы как:</p>
-
-            <ul>
-                <li>отполировать;</li>
-                <li>поменять ремешок.</li>
-            </ul>
-
-            <p>Наша компания работает достаточно долгое время, и мы создали себе безупречную репутацию. Наша компания в
-                Москве зарекомендовала себя с положительной стороны.</p>
-
-            <div class="article-callback">
-                <div class="article-callback__content">
-                    <h3 class="article-callback__title">хотите продать брендовые часы?</h3>
-
-                    <div class="article-callback__description">
-                        Заполните форму и наш менеджер свяжется с вами в ближайшее время
-                    </div>
-                </div>
-
-                <form method="post" class="form article-form">
-                    <label><input type="text" placeholder="Имя" required name="name"></label>
-
-                    <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
-
-                    <button type="submit" class="btn btn-accent">Заказать оценку</button>
-                </form>
-            </div>
-
-
-            <h4 class="article-box__subtitle">Залог элитных часов</h4>
-
-
-            <p>Мы понимаем, что заложенные вами часы представляют для вас большую ценность. Возможно очень дороги, как
-                память. Ваши элитные часы будут бережно храниться у нас под залогом в Москве, в охраняемом помещении, по
-                этому за их сохранность вы можете быть полностью уверены.</p>
-
-            <p>Если вы заложили часы на определенный срок, но решили выкупить их раньше-мы пересчитаем проценты за
-                пользование займом. Эти условия прописаны в договоре, один экземпляр которого выдается на руки клиенту.
-                Заложить часы в наш ломбард всегда удобно именно по этой причине выбирают именно нашу компанию сотни
-                клиентов в Москве.</p>
-
-            <p>Оценка часов производится опытным оценщиком в присутствии клиента. Цена и детали сделки кредитования
-                обговариваются сразу до подписания договора.</p>
-
-            <p>Мы можем по вашему желанию, за время пока часы хранятся у нас провести такие работы как:</p>
-
-            <ul>
-                <li>- отполировать;</li>
-                <li>- поменять ремешок.</li>
-            </ul>
-
-            <p>Наша компания работает достаточно долгое время, и мы создали себе безупречную репутацию. Наша компания в
-                Москве зарекомендовала себя с положительной стороны.</p>
-
-            <h4 class="article-box__subtitle">Проведение экспертизы элитных часов</h4>
-
-
-            <p>Проведением экспертизы ваших часов занимаются только квалифицированные специалисты в данной сфере.
-            Осуществляется проверка подлинности, проводится анализ общего состояния часов. При помощи специального
-            оборудования специалисты определяют точность работы механизма. Принеся часы в ломбард, можно быть уверенным,
-                что ваша собственность оценена правильно, а качество оценочной процедуры на высоком уровне.</p>
-
-            <p>Цена часов зависит от:</p>
-
-            <ul>
-                <li>- технического состояния;</li>
-                <li>- марки и модели часов;</li>
-                <li>- наличия оригинальной упаковки;</li>
-                <li>- наличия гарантийного документа.</li>
-            </ul>
-
-            <p>Денежные средства выдаются клиенту после подписания договора. При желании клиента, часы можно застраховать
-                тем самым обеспечить себе спокойствие.</p>
-
-            <p>Бывают ситуации, когда нет времени ехать в ломбард, в таких случаях можно воспользоваться оценкой онлайн.</p>
-
-            <h4 class="article-box__subtitle">Онлайн-оценка в Москве</h4>
-
-            <p>Для оценки дорогих часов онлайн, клиенту необходимо правильно заполнить онлайн-заявку на сайте ломбарда и
-                файлом приложить фотографию изделия. Необходимо указать:</p>
-
-            <ul>
-                <li>свои личные данные(мы не передаем информацию с вашими данными третьим лицам);</li>
-                <li>бренд;</li>
-                <li>модель;</li>
-                <li>желаемая сумма;</li>
-                <li>наличие или отсутствие документов и упаковки;</li>
-                <li>телефон по которому с вами можно связаться;</li>
-                <li>фотография часов с разных ракурсов.</li>
-                <li>Всего несколько фотографий и немного информации позволят оперативно, в течении 20-30 минут получить
-                    предварительную и профессиональную оценку часов в Москве.</li>
-            </ul>
-
-            <p>Онлайн-оценка может быть только предварительной. Окончательную стоимость устанавливает эксперт.</p>
-
-            <h4 class="article-box__subtitle">Где можно оценить часы?</h4>
-
-            <p>Наш ломбард в Москве на протяжении всего времени деятельности нашей компании придерживается основных правил:</p>
-
-            <ul>
-                <li>- профессионализм;</li>
-
-                <li>- высокий уровень безопасности;</li>
-
-                <li>- ответственность.</li>
-            </ul>
-
-            <p>У нас работает приветливый персонал, который вежливо ответит на все интересующие Вас вопросы и по телефону и
-            в офисе компании. Мы ценим время своих клиентов и максимально сокращаем сроки оформления документов. Вы
-                можете быстро заложить часы и получить кредит.</p>
-
-            <p>В нашей компании Вы сможете выгодно заложить или продать свои часы. Так же вы можете получить подробное
-            обоснование цены, которую сформировал оценщик. К каждому своему клиенту мы относимся с пониманием и уделяем
-                должное внимание.</p>
-
-            <p>Наши возможности по кредитованию или выкупу ваших брендовых часов не ограничены. Обращаясь в нашу компанию,
-            вы можете быть уверенным на 100%, что уйдете от нас с нужной вам суммой. Мы поможем Вам не только выгодно
-                продать или заложить часы, мы можем предоставить информацию об истории ваших часов.</p>
-
-            <p>Мы ценим время своих клиентов, бережем свою репутацию и работаем для вас.</p>
+          <p>Многие потенциальные покупатели не в состоянии приобрести именно ту вещь, которую хотят. Связано это с
+            ценой, как указано выше, а также с возможностью ограниченной серии выпуска часов. Существует вторичный рынок
+            часов, который дает вторую жизнь не только самим часам, но и возможность наслаждаться ими своему новому
+            владельцу.</p>
         </div>
+      </div>
+
+      <div class="article__image"><img src="images/product2.png" alt=""></div>
     </div>
+
+    <div class="advantages w-100">
+      <div class="row">
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon1.svg" alt=""></div>
+            <p>Онлайн оценка</p>
+          </div>
+        </div>
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon2.svg" alt=""></div>
+            <p>Моментальная выплата</p>
+          </div>
+        </div>
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon3.svg" alt=""></div>
+            <p>45 минут на выкуп </p>
+          </div>
+        </div>
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon9.svg" alt=""></div>
+            <p>До 10 млн рублей</p>
+          </div>
+        </div>
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon10.svg" alt=""></div>
+            <p>Выезд эксперта</p>
+          </div>
+        </div>
+        <div class="col-30 mb-20">
+          <div class="advantage-of-cooperation__box">
+            <div class="advantage-of-cooperation__icon"><img src="images/adv-icon11.svg" alt=""></div>
+            <p>Любая форма
+              оплаты</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-wrapper article-wrapper2">
+      <div class="article__image"><img src="images/product5.png" alt=""></div>
+      <div class="article__content">
+        <div class="box-text">
+          <p>Когда возникает необходимость или потребность в продаже часов известных марок, на помощь приходят часовые
+            скупки. Данные метод реализации часов позволяет не только экономить время, но также получить необходимую
+            денежную сумму в короткий срок, а также сохранить свои нервы. Продажа часов парой может занимать долгие
+            промежутки времени, что не самым лучшим образом сказывается на владельце и на самих часах. Часы, которые
+            долго
+            лежат без дела, если продажа связана с неиспользованием часов, может привести к непредвиденным затруднениям
+            в работе механизма. <br>
+            Для продажи швейцарских часов необходимо сделать несколько простых шагов. Первое это оценить их. Оценка
+            часов
+            занимаем не более пяти минут. Второй момент – это согласовать время и дату встречи. Финальный шаг – пройти
+            проверку часов и получить оговоренную сумму.</p>
+
+          <p>Самостоятельная продажа часов может привести к трудностям. Не каждый клиент понимает, что он покупает, не
+            может
+            достоверно оценить продаваемые часы, а также вести переговоры. Но самый выгодный и простой способ быстро
+            решить
+            финансовые трудности буквально за несколько минут — это сдать часы на выкуп. Вы гарантированно получаете
+            максимальную сумму выкупа плюс избавить себя от проблем и проверок клиентов.</p>
+
+          <p>Выкупаем швейцарские часы разных производителей – это может быть мануфактурный калибр или обычная
+            швейцарская
+            классика. Если возникла потребность продать швейцарские часы стоит заполнить форму на сайте и осуществить
+            оценку
+            в режиме онлайн. Как правило, специалист свяжется в течении пяти минут. Если Вы хотите продать швейцарские
+            часы
+            – сделайте это у нас, получите максимальную сумму оценки и моментальную выплату удобным для вас
+            способом.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<div class="header__bottom callback-line">
+  <div class="container">
+    <p>Оставьте заявку на продажу часов</p>
 
-<section class="appraisal bg-brown color-white">
-    <div class="container">
-        <h2><span>Оценка онлайн Всего за 5 минут</span></h2>
+    <form method="post" class="form">
+      <label><input type="text" placeholder="Имя" required name="name"></label>
 
-        <form method="post" class="form">
-            <label><input type="text" placeholder="Ваше имя*" required name="name"></label>
+      <label><input type="text" placeholder="Телефон" required name="phone"></label>
 
-            <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
-
-            <label><input type="text" placeholder="Бренд часов*" name="brand_watch" required></label>
-
-            <label><input type="text" placeholder="Модель часов / референс*" name="model_watch" required></label>
-
-            <label><select name="select">
-                <option value="Комплект" selected>Комплект</option>
-                <option value="Комплект">Комплект</option>
-                <option value="Комплект">Комплект</option>
-                <option value="Комплект">Комплект</option>
-            </select></label>
-
-
-            <div class="file__upload">
-                <label class="file__upload_label">
+      <div class="file__upload">
+        <label class="file__upload_label">
                     <span class="file__upload_icon">
-                        <img src="images/camera.svg" alt="">
+                        <img src="images/pic.svg" alt="">
                     </span>
-                    <input type="file" name="file" class="file__input">Прикрепить фото (не больше 5)
-                </label>
-                <!--                <div class="file__upload_result"></div>-->
-            </div>
+          <input type="file" name="file" class="file__input">Прикрепите фото
+        </label>
+        <!--                <div class="file__upload_result"></div>-->
+      </div>
 
-            <div class="consent">
-                Отправляя форму, Вы соглашаетесь с <a href="politics.html" class="links-accent">пользовательским
-                соглашением</a>. Мы ответим в течении 5 минут
-            </div>
+      <button type="submit" class="btn btn-white">Отправить заявку</button>
+    </form>
+  </div>
+</div>
 
-            <button type="submit" class="btn btn-accent">Заказать оценку</button>
-        </form>
+<div class="article-section">
+  <div class="container">
+    <div class="article-wrapper">
+      <div class="article__content">
+        <div class="box-text">
+          <p>Швейцарские часы уже более 200 лет являются символом точности и часового изящества. За долгую историю
+            часового дела мир увидел более полусотни выдающихся мастеров, многие из которых в последствии основали свои
+            мануфактуры и дома.</p>
+
+            <p>Спустя несколько столетий, отношение к часовому делу только улучшилось. Любовь к часам возрастает с каждым
+              днем. Многие стремятся к приобретению часов разных марок и брендов. По крайней мере с уверенностью можно
+              сказать, что любителей часов с каждым днем все больше. Признавая это можно отметить еще один момент — это
+              стоимость часов, сделанных в Швейцарии. Долгие годы она была достаточно высока как для любителей, так и для
+              профессионалов часового дела.</p>
+
+            <p>Виной этому не только сложность часовых механизмов и разработки элементов, но также и борьба на рынке.
+              Каждая мануфактура хочет привлечь клиента на свою сторону, именно поэтому придумывает всякие изощрения для
+              этой цели.</p>
+
+            <p>Многие потенциальные покупатели не в состоянии приобрести именно ту вещь, которую хотят. Связано это с
+            ценой, как указано выше, а также с возможностью ограниченной серии выпуска часов. Существует вторичный рынок
+            часов, который дает вторую жизнь не только самим часам, но и возможность наслаждаться ими своему новому
+            владельцу.</p>
+        </div>
+      </div>
+
+      <div class="article__image"><img src="images/product6.png" alt=""></div>
     </div>
+  </div>
+</div>
+
+<section class="callback bg-accent color-white">
+  <div class="container">
+    <div class="callback__content">
+      <h2>Перезвоним Вам за 30 секунд</h2>
+      <div class="box-text">
+        Оставьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время
+      </div>
+    </div>
+
+    <form method="post" class="form form__callback">
+
+      <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
+
+      <button type="submit" class="btn btn-white">Перезвоните мне</button>
+    </form>
+  </div>
 </section>
 
 <footer>
+  <div class="footer-top">
     <div class="container">
+      <ul class="footer-menu">
+        <li><a href="article.html">Статьи</a></li>
+        <li><a href="catalog.html">Каталог часов</a></li>
+        <li><a href="politics.html">Политика конфиденциальности</a></li>
+        <li><a href="politics.html">Пользовательское соглашение</a></li>
+      </ul>
 
-        <a href="/" class="logo">
-            <img src="images/logo2.svg" alt="">
-        </a>
-
-        <ul class="footer-menu">
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Пользовательское соглашение</a></li>
-        </ul>
-
-        <div class="header__box header__box_phone">
-            <div class="header__box_icon">
-                <img src="images/phone-call.svg" alt="Продать часы">
-            </div>
-            <div class="phone-wrapper">
-                <a href="tel:+74951477778" class="phone">
-                    <span class="phone__text">8 (495) 147-77-78</span>
-                </a>
-                <a href="tel:+79688889288" class="phone">
-                    <span class="phone__text">8 (968) 888-92-88</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="header__box header__box_address">
-            <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt="адрес"></div>
-            <div class="header__box_address_text">г. Москва, Ленинградский
-                проспект, дом 76, к.1
-            </div>
-        </div>
-
-
-        <!--    <div class="copyright w-100">-->
-        <!--      <p>Copyright © 2020 Все права защищены. Любое копированание материала запрещено</p>-->
-        <!--    </div>-->
     </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright">Мир часов © 2021</div>
+    </div>
+  </div>
 </footer>
 
 <div class="modal__div" id="callback__modal">
-    <div class="modal__wrapper bg-brown color-white">
-        <span class="modal__close"></span>
-        <h2><span>Оценка онлайн Всего за 5 минут</span></h2>
+  <div class="modal__wrapper">
+    <span class="modal__close"></span>
+    <h2>Онлайн оценка часов.
+      Продать за 5 минут</h2>
 
-        <form method="post" class="form">
-            <label><input type="text" placeholder="Ваше имя*" required name="name"></label>
+    <form method="post" class="form">
+      <div class="form-group">
+        <label><input type="text" placeholder="Имя" required name="name"></label>
 
-            <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
+        <label><input type="text" placeholder="Телефон" required name="phone"></label>
+      </div>
 
-            <label><input type="text" placeholder="Бренд часов*" name="brand_watch" required></label>
-
-            <label><input type="text" placeholder="Модель часов / референс*" name="model_watch" required></label>
-
-            <label><select name="select">
-                <option value="Комплект" selected>Комплект</option>
-                <option value="Комплект">Комплект</option>
-                <option value="Комплект">Комплект</option>
-                <option value="Комплект">Комплект</option>
-            </select></label>
-
-
-            <div class="file__upload">
-                <label class="file__upload_label">
+      <div class="form-group">
+        <div class="file__upload">
+          <label class="file__upload_label">
                     <span class="file__upload_icon">
-                        <img src="images/camera.svg" alt="">
+                        <img src="images/pic.svg" alt="">
                     </span>
-                    <input type="file" name="file" class="file__input">Прикрепить фото (не больше 5)
-                </label>
-                <!--                <div class="file__upload_result"></div>-->
-            </div>
+            <input type="file" name="file" class="file__input">Прикрепите фото
+          </label>
+          <!--                <div class="file__upload_result"></div>-->
+        </div>
 
-            <div class="consent">
-                Отправляя форму, Вы соглашаетесь с <a href="politics.html" class="links-accent">пользовательским
-                соглашением</a>. Мы ответим в течении 5 минут
-            </div>
+        <button type="submit" class="btn btn-white">Отправить заявку</button>
+      </div>
+    </form>
 
-            <button type="submit" class="btn btn-accent">Заказать оценку</button>
-        </form>
-    </div>
+  </div>
 </div>
+
+<div class="modal__div order-modal" id="order__modal">
+  <div class="modal__wrapper">
+    <span class="modal__close"></span>
+    <h2>BREGUET BREGUET ARCHIEVE 3337 3337BB/1E/986</h2>
+
+    <div class="box-text">
+      <p>Внутренний код: 22334455</p>
+    </div>
+
+    <form method="post" class="form">
+      <label><input type="text" placeholder="Имя" required name="name"></label>
+
+      <label><input type="text" placeholder="+7 ___ - __ - __" required name="phone"></label>
+      <button type="submit" class="btn btn-white">Купить часы</button>
+    </form>
+
+  </div>
+</div>
+
 <div class="overlay"></div><!-- Пoдлoжкa -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/common.js"></script>
 
 </body>

@@ -5,13 +5,6 @@
   src: url("../fonts/Xolonium/Xolonium.eot");
   src: url("../fonts/Xolonium/Xolonium.eot?#iefix") format("embedded-opentype"), url("../fonts/Xolonium/Xolonium.woff") format("woff"), url("../fonts/Xolonium/Xolonium.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "Xolonium";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/Xolonium/Xolonium-Bold.eot");
-  src: url("../fonts/Xolonium/Xolonium-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Xolonium/Xolonium-Bold.woff") format("woff"), url("../fonts/Xolonium/Xolonium-Bold.ttf") format("truetype"); }
-
 .recommended {
   padding: 0 0 50px; }
   .recommended h2 {
@@ -215,7 +208,17 @@
     background: transparent;
     padding: 0;
     margin: 40px 0 0;
-    min-height: auto; }
+    min-height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .advantages-products .advantage-of-cooperation__icon {
     margin: 0 auto 20px;
     width: 50px;

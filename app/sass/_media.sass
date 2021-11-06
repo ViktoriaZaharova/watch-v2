@@ -20,13 +20,21 @@
     padding: 68px 11px 32px 37px
 
   .services-banner__box_max .services-banner__box_img
-    width: 170px
+    width: 470px
+    right: -180px
 
   .services-banner__box_max .list-check
     margin: 50px 0 0
 
   .services-banner__box_max .services-banner__box_title
     font-size: 30px
+    line-height: normal
+
+  .services-banner__box_three .services-banner__box_img
+    max-width: 120px
+
+  .services-banner__box_two .services-banner__box_img
+    max-width: 150px
 
   .callback__content
     max-width: none
@@ -56,9 +64,14 @@
   .error-content
     margin: 0 30px 0 0
 
+  .advantages__box_title
+    font-size: 14px
+
+  .advantages__box
+    padding: 30px 0
+
+
 @media only screen and (max-width : 1100px)
-  .banner-home__content
-    max-width: 500px
 
   h1
     font-size: 30px
@@ -73,10 +86,6 @@
   .services-banner__box_three .list-check
     max-width: 280px
 
-  .services-banner__box_max .services-banner__box_img
-    position: absolute
-    right: 10px
-    bottom: 100px
 
   .header__bottom
     p
@@ -118,6 +127,9 @@
   .contacts__info
     width: calc(100% - 500px)
 
+  .stages-works
+    padding: 40px 0
+
 
 @media only screen and (max-width : 992px)
   .form label, .file__upload, .form .consent, .form button
@@ -127,11 +139,10 @@
     justify-content: space-around
 
   .watch-sale__image
-    width: 400px
+    width: 350px
 
   .watch-sale__content
-    width: calc(100% - 400px)
-    padding: 0 0 0 30px
+    width: calc(100% - 350px)
 
   h3
     font-size: 18px
@@ -142,7 +153,17 @@
 
   .advantages__box
     max-width: none
-    width: 33.3%
+    width: calc(50% - 15px)
+    margin: 0 0 30px
+
+  .advantages-home
+    padding: 40px 0
+    h2
+      margin: 0 auto 30px
+      font-size: 30px
+
+  .advantages__box_title
+    max-width: 300px
 
   .advantages, .services-banners, .callback
     padding: 60px 0
@@ -169,10 +190,7 @@
     max-width: 400px
 
   .services-banner__box_max .services-banner__box_img
-    position: relative
-    bottom: 0
-    right: 0
-    margin: 0 0 0 auto
+    top: 0
 
   .services-banner__box_three .list-check
     max-width: 450px
@@ -231,42 +249,55 @@
   .about-gallery
     margin: 40px 0
 
+  .news
+    .box-text
+      margin: 0 auto 30px
+    .col-50
+      width: 50%
+
+  .news__box
+    font-size: 14px
+
+  .read-more
+    margin: auto 0 0
+    font-size: 14px
+
+  .news__box_content
+    width: calc(100% - 170px)
+
+  .news__box_img
+    width: 170px
+    height: 170px
+
+  .fixed-social .messenger, .fixed-social .phone
+    width: 50px
+    height: 50px
+
+  .banner-home__content
+    max-width: 550px
+
+  .watch-sale__img
+    max-width: 260px
+    margin: 0
+
+  .watch-sale__content
+    width: calc(100% - 260px)
+
 @media only screen and (max-width : 870px)
   .banner-home__image
     max-width: 250px
 
-  .banner-home
-    padding: 30px 0
+  .banner-home__content
+    max-width: 450px
+    margin: 30px 0
+
 
   .banner-home__description
     margin: 20px 0 30px
 
-  .banner-home__content
-    max-width: 455px
 
   .stages-works__box
     font-size: 16px
-    padding: 0 5px
-    p
-      margin: 30px auto 0
-
-  .stages-works__box_icon
-    height: 70px
-
-
-  .article__image
-    width: 300px
-    height: 300px
-
-
-  .article-callback
-    padding: 20px 30px
-
-  .article-callback__content
-    padding: 0 30px 0 0
-
-  .article-callback__title
-    font-size: 24px
 
   .error-content
     order: 1
@@ -278,6 +309,34 @@
 
   .error
     padding: 60px 0
+
+  .news
+    .col-50
+      width: 100%
+
+  .line-decor
+    display: none
+
+  .stages-works__box
+    width: 50%
+    max-width: none
+
+  .brands-item8
+    max-width: 180px
+
+  .brands-item6
+    margin-left: 0
+    max-width: 120px
+
+  .brands-item9
+    max-width: 140px
+    margin-right: 0
+
+  .brands-item3
+    max-width: 130px
+
+  .brands-item2
+    max-width: 210px
 
 @media only screen and (max-width : 768px)
   .header__bottom
@@ -317,10 +376,15 @@
     h1
       font-size: 24px
 
-  h2
+  h2, .advantages-home h2
     font-size: 24px
     margin: 0 0 20px
 
+  .advantages__box
+    padding: 20px 10px
+
+  .advantages-home
+    padding: 40px 0
 
   .stages-works, .brands-section
     padding: 60px 0
@@ -352,14 +416,16 @@
   .brands
     padding: 0 0 40px
 
-  .banner-home__content
-    max-width: 350px
 
   .banner-home__description
     font-size: 16px
 
   .banner-home__image
     max-width: 180px
+
+  .watch-sale__img
+    max-width: 300px
+    margin: 0 auto
 
   .watch-sale__content
     max-width: none
@@ -368,26 +434,18 @@
     width: 100%
     margin: 0 0 30px
 
-  .watch-sale__box_text
-    max-width: none
+  .watch-sale__list
+    justify-content: space-around
 
-  .watch-sale__box_icon
-    margin: 0 10px 0 0
+  .watch-sale__item
+    margin: 20px 0 0
+
 
   .watch-sale
-    padding: 70px 0
-
-  .watch-sale__image
-    margin: 0 auto
-
-  .watch-sale .btn
-    margin: 40px auto 0
+    padding: 40px 0
 
   .advantages__box_title
     font-size: 16px
-
-  .list-brands__item
-    margin: 0 0 20px
 
   .copyright
     font-size: 12px
@@ -429,18 +487,45 @@
     line-height: normal
     margin: 0 auto 20px
 
-@media only screen and (max-width : 700px)
   .article__content
     width: 100%
     padding: 0
-    margin: 0 0 30px
+    margin: 0 auto 30px
+    .box-text
+      font-size: 14px
 
   .article__image
-    margin: 0 20px 20px 0
+    max-width: 200px
+    margin: 0 auto
 
-  .article p, .article ul
-    margin: 0 0 10px
+  .article:before
+    right: 0
+    top: -80px
 
+  .banner-home__content
+    max-width: none
+    width: 100%
+    padding: 0
+    .box-text
+      max-width: none
+
+  .banner-home__image
+    position: relative
+    margin: 0 auto 30px
+    right: 0
+    top: 0
+    transform: none
+
+  .services-banner__box_max .services-banner__box_img
+    max-width: 300px
+    right: -100px
+    top: 70px
+
+  .brands-section h2
+    font-size: 30px
+
+
+@media only screen and (max-width : 700px)
   .contacts__info
     max-width: none
     padding: 0
@@ -451,6 +536,8 @@
     height: 250px
     max-width: 100%
 
+  .stages-works h2
+    font-size: 30px
 
 @media only screen and (max-width : 650px)
   .menu__links
@@ -488,8 +575,7 @@
     font-size: 24px
 
   .stages-works__box
-    width: 33.3%
-    margin: 0 0 30px
+    font-size: 14px
 
   .list-dots__links
     font-size: 14px
@@ -518,15 +604,6 @@
   .advantages__box p
     max-width: none
 
-  .article-callback__content
-    padding: 0
-    width: 100%
-    margin: 0 0 20px
-    text-align: center
-
-  .article-callback__description
-    font-size: 14px
-
 
 @media only screen and (max-width : 575px)
   .header__top
@@ -542,11 +619,6 @@
     span
       padding: 0
 
-  .banner-home__content
-    max-width: 265px
-
-  .banner-home__image
-    max-width: 150px
 
   h1
     span
@@ -554,12 +626,19 @@
 
   .banner-home__description
     font-size: 14px
+    line-height: normal
+    width: 100%
+
+  .fixed-social .messenger, .fixed-social .phone
+    width: 30px
+    height: 30px
+
+  .fixed-social .header__box_icon
+    padding: 10px
 
   .btn
     height: 50px
 
-  .services-banner__box_max .services-banner__box_img
-    max-width: 100px
 
   .services-banner__box_max .list-check__item
     margin: 0 0 20px
@@ -576,10 +655,6 @@
   .services-banner__box_three:after
     width: 130px
     height: 130px
-
-  .list-brands
-    width: 50%
-    margin: 0 0 20px
 
   .callback__content
     max-width: none
@@ -653,36 +728,25 @@
   .about
     padding: 0 0 40px
 
-@media only screen and (max-width : 510px)
-  .news__box_img
-    height: 180px
+  .stages-works__content
+    padding: 0
 
-  .news__box
-    height: 100%
-    margin: 0
+  .brands__content
+    flex-direction: column
+    align-items: center
 
-  .news__box_content
-    height: auto
-
-  .news__box_title
-    margin: 0 0 20px
-
-  .news__box__links
-    margin: 20px 0 0
-
-  .news
-    .col-25
-      margin: 0 0 20px
-    .row
-      align-items: stretch
-
-  .article-callback
-    margin: 30px 0
-
-  .article__image
+  .brands-item
     margin: 0 auto 20px
-    width: 100%
 
+  .brands-section .box-text
+    margin: 30px 0 0
+
+  .brands-section h2
+    font-size: 24px
+
+
+
+@media only screen and (max-width : 510px)
   .phone__text
     display: none
 
@@ -722,9 +786,6 @@
   .banner-home__image
     max-width: 120px
 
-  .watch-sale__box_icon
-    width: 48px
-
   .services-banner__box_max
     font-size: 14px
     padding: 25px 10px 25px 25px
@@ -741,11 +802,14 @@
   .services-banner__box_three
     padding: 25px 75px 25px 25px
 
+  .services-banner__box_max .services-banner__box_img
+    max-width: 200px
+    right: -60px
+    top: auto
+    bottom: -30px
+
   .services-banner__box_three .services-banner__box_img
     max-width: 120px
-    top: 50%
-    transform: translate(0,-50%)
-    bottom: 0
 
   .services-banner__box_three:after
     right: 30px
@@ -756,11 +820,6 @@
     right: 10px
     width: 48px
     height: 48px
-
-
-
-  .article-callback__title
-    font-size: 22px
 
   .breadcrumb li a
     font-size: 10px
@@ -777,6 +836,28 @@
   .news
     padding: 0 0 40px
 
+  .news__box
+    flex-direction: column
+    align-items: flex-start
+
+  .news__box_content
+    width: 100%
+    padding: 20px 0 0
+
+  .news__box_img
+    width: 100%
+    height: 200px
+
+  .read-more
+    margin: 20px 0 0
+
+  .watch-sale__item
+    width: 50%
+
+  .btn-border-white
+    padding: 0 10px
+    font-size: 14px
+
 @media only screen and (max-width : 420px)
   .banner-home__image
     display: none
@@ -784,11 +865,13 @@
   .banner-home__content
     max-width: none
 
-  .watch-sale__box
-    margin: 0 0 30px
-
   .services-banner__box_max .services-banner__box_img
-    max-width: 70px
+    max-width: 160px
+    right: -40px
+    bottom: 0
+
+  .services-banners
+    padding: 40px 0
 
   .services-banner__box_max .services-banner__box_title
     font-size: 20px
@@ -802,14 +885,11 @@
   .services-banner__box_content
     max-width: 180px
 
-  .services-banner__box_max .services-banner__box_img
-    margin: auto 0 auto auto
-
   .stages-works__box
-    width: 50%
+    width: 100%
+    &:nth-child(2), &:nth-child(3), &:last-child
+      max-width: none
 
-  .article
-    font-size: 14px
 
   .politics
     padding: 0 0 50px

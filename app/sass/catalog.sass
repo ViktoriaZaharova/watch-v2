@@ -21,6 +21,30 @@
   .container
     align-items: flex-start
 
+.btn-view
+  width: 100%
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin: 5px 0 0
+  color: #2E84E9
+
+.btn-view__text
+  text-decoration: underline
+
+.btn-view:after
+  content: ''
+  display: inline-block
+  width: 10px
+  height: 5px
+  background: url("../images/arrow-blue.svg") no-repeat center
+  background-size: contain
+  margin: 0 0 0 10px
+
+
 .form-search
   position: relative
   margin: 20px 0
@@ -245,22 +269,6 @@
     &:last-child
       margin: 0
 
-.btn-view
-  width: 100%
-  display: flex
-  align-items: center
-  margin: 5px 0 0
-  color: #2E84E9
-  &__text
-    text-decoration: underline
-  &:after
-    content: ''
-    display: inline-block
-    width: 10px
-    height: 5px
-    background: url("../images/arrow-blue.svg") no-repeat center
-      size: contain
-    margin: 0 0 0 10px
 
 .btn-filter
   display: none
