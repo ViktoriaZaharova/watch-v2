@@ -1,6 +1,6 @@
 $('[name=phone]').mask("+7 (999) 999-99-99");
 
-$("[name=file]").change(function(){
+$("[name=file]").change(function () {
     var filename = $(this).val().replace(/.*\\/, "");
     $(".file__upload_result").html(filename);
 });
@@ -42,7 +42,7 @@ $(document).ready(function () {
 //end
 
 $('.btn-burger').click(function () {
-   $('.mobile-menu').slideDown();
+    $('.mobile-menu').slideDown();
 });
 
 $('.menu-close').click(function () {
@@ -93,7 +93,7 @@ $('.product-gallery').slick({
     fade: true
 });
 
-if ($(".product h1").length){
+if ($(".product h1").length) {
     $('.product h1').clone().appendTo('.title-mobile');
 }
 
@@ -114,7 +114,7 @@ function accordeon() {
 
 accordeon();
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('.slider-range').slider({
         range: true,
@@ -149,7 +149,7 @@ $('.panel_heading .list-checkbox').each(function () {
 // hidden list > 10
 
 // show list all
-$('.panel_heading .btn-view').on('click', function(e){
+$('.panel_heading .btn-view').on('click', function (e) {
     e.preventDefault();
 
     var
@@ -157,7 +157,7 @@ $('.panel_heading .btn-view').on('click', function(e){
         content = $(this).parent().find('.list-checkbox li');
 
 
-    if(!$this.hasClass('trigger')){
+    if (!$this.hasClass('trigger')) {
         $this.addClass('trigger');
         $this.hide();
 
@@ -173,7 +173,7 @@ $('.panel_heading .btn-view').on('click', function(e){
 
 $('.btn-filter').on('click', function (e) {
     e.preventDefault();
-   $('.sidebar').fadeToggle();
+    $('.sidebar').fadeToggle();
 });
 
 $('.sidebar-close').on('click', function (e) {
@@ -184,4 +184,43 @@ $('.sidebar-close').on('click', function (e) {
 $('.btn-sidebar').on('click', function (e) {
     e.preventDefault();
     $('.cabinet-sidebar').fadeToggle();
+});
+
+$(document).ready(function () {
+    var entries = [
+        {image: 'images/brand-logo1.png', width: '90', height: '48', url: '#', target: '_top'},
+        {image: 'images/brand-logo2.png', width: '241', height: '44', url: '#', target: '_top'},
+        {image: 'images/brand-logo3.png', width: '180', height: '78', url: '#', target: '_top'},
+        {image: 'images/brand-logo4.png', width: '75', height: '45', url: '#', target: '_top'},
+        {image: 'images/brand-logo5.svg', width: '369', height: '90', url: '#', target: '_top'},
+        {image: 'images/brand-logo4.png', width: '177', height: '107', url: '#', target: '_top'},
+        {image: 'images/brand-logo3.png', width: '241', height: '104', url: '#', target: '_top'},
+        {image: 'images/brand-logo2.png', width: '90', height: '39', url: '#', target: '_top'},
+        {image: 'images/brand-logo1.png', width: '182', height: '97', url: '#', target: '_top'},
+    ];
+
+    var settings = {
+        entries: entries,
+        width: 768,
+        height: 352,
+        radius: '75%',
+        radiusMin: 95,
+        bgDraw: true,
+        bgColor: '#fff',
+        opacityOver: 1.00,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 1400,
+        speed: 1,
+        fontFamily: 'Oswald, Arial, sans-serif',
+        fontSize: '15',
+        fontColor: '#111',
+        fontWeight: 'normal', //bold
+        fontStyle: 'normal', //italic
+        fontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+        fontToUpperCase: true
+    };
+
+    //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+    $('#holder').svg3DTagCloud(settings);
 });

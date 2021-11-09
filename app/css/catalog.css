@@ -376,4 +376,7 @@
     .catalog .col-25 {
       width: 50%; }
   .form-search input {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .btn-filter {
+    width: 100%;
+    max-width: none; } }

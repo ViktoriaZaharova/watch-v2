@@ -1018,9 +1018,7 @@ header .header__box_message {
   max-width: 786px;
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1030,6 +1028,9 @@ header .header__box_message {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
+
+#holder {
+  margin: 0 auto; }
 
 .brands-item {
   display: -webkit-box;
@@ -2160,7 +2161,6 @@ footer .container {
             justify-content: center;
     margin: 0 20px 0 0; }
     .advantage-of-cooperation__icon img {
-      width: 100%;
       max-height: 100%; }
   .advantage-of-cooperation .box-text {
     text-align: center;
@@ -2407,6 +2407,10 @@ footer .container {
     max-width: 300px; }
   .hand-watch {
     padding: 30px 0; }
+    .hand-watch .wrapper-img {
+      display: none; }
+    .hand-watch .wrapper-content {
+      margin: 0; }
   .col-50 {
     width: 100%;
     padding: 0 10px; }
@@ -2535,7 +2539,7 @@ footer .container {
   .form__callback {
     margin: 0; }
   .breadcrumb li {
-    margin: 0 10px 5px 0; }
+    margin: 0 0 5px 0; }
     .breadcrumb li:last-child {
       margin: 0 0 5px; }
     .breadcrumb li a {
@@ -2979,11 +2983,13 @@ footer .container {
     font-size: 14px;
     line-height: normal;
     width: 100%; }
+  .fixed-social {
+    top: 40%; }
   .fixed-social .messenger, .fixed-social .phone {
-    width: 30px;
-    height: 30px; }
+    width: 40px;
+    height: 40px; }
   .fixed-social .header__box_icon {
-    padding: 10px; }
+    padding: 12px; }
   .btn {
     height: 50px; }
   .services-banner__box_max .list-check__item {
@@ -3068,13 +3074,18 @@ footer .container {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .brands-item {
     margin: 0 auto 20px; }
   .brands-section .box-text {
     margin: 30px 0 0; }
   .brands-section h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  #holder {
+    display: none; } }
 
 @media only screen and (max-width: 510px) {
   .phone__text {
