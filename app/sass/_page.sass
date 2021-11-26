@@ -337,6 +337,40 @@
       &:last-child
         margin: 0
 
+//.page new
+.page-new
+  h1
+    text-align: left
+    margin: 0 0 40px
+
+.list-flex
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    width: calc(100%/4)
+    letter-spacing: 0.01em
+    margin-bottom: 24px
+    color: #3A95AA
+  a
+    color: #3A95AA
+    position: relative
+    padding-left: 33px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 20px
+      height: 21px
+      background: url("../images/services-list_area.svg") no-repeat center
+        size: 100%
+    &:hover
+      color: #999
+
+
 
 @media (max-width: 1200px)
   .buying-home
@@ -434,6 +468,10 @@
   .history-company
     padding: 40px 0
 
+
+  .list-flex
+    li
+      width: calc(100%/3)
 
 
 @media (max-width: 920px)
@@ -536,6 +574,13 @@
       background-size: cover
       top: 0
 
+  .list-flex
+    li
+      width: calc(100%/2)
+
+  .page-new h1
+    margin: 0 0 30px
+
 @media (max-width: 480px)
   .advantage-of-cooperation__box
     flex-direction: column
@@ -564,3 +609,8 @@
     &__body
       width: 100%
       padding: 20px
+
+  .list-flex
+    font-size: 14px
+    li
+      width: 100%
