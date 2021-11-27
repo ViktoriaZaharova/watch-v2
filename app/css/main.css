@@ -2346,6 +2346,9 @@ footer .container {
     .list-flex a:hover {
       color: #999; }
 
+.advantages-page {
+  padding: 50px 0 100px; }
+
 @media (max-width: 1200px) {
   .buying-home__img {
     max-width: 500px; }
